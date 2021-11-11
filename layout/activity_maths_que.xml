@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Maths_que">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="no of question"
+        android:id="@+id/idTvQuestionAttempted"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_height="match_parent">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="nquestion"
+        android:id="@+id/idTvquestion"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_height="match_parent">
+    </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/optn1"
+        android:background="@drawable/button_bg"
+        android:text="optn"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/optn2"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_bg"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/optn3"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_bg"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/optn4"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_bg"
+        android:layout_height="wrap_content">
+    </Button>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="70dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="90dp">
+
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:paddingBottom="50dp"
+            android:text="00:00:00"
+            android:textAlignment="center"
+            android:textColor="#46199B"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/btPause"
+            android:layout_weight="1"
+            android:background="#FAFAFA"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_pause"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/btStart"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_play_button"
+            android:paddingLeft="40dp"
+            android:background="#FAFAFA"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/btReset"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_reset"
+            android:paddingLeft="50dp"
+            android:background="#FAFAFA"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</LinearLayout>

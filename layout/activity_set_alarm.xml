@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".SetAlarm">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+
+
+
+            <!--
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/alarm1"
+                            app:cardMaxElevation="12dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:padding="15dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_baseline_access_alarm_24"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:text="Select your Alarm Time"
+                                    android:textSize="20dp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal">
+
+                                </TextView>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+            -->
+            <TimePicker
+                android:layout_width="match_parent"
+                android:id="@+id/timepicker"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/button_bg"
+                android:text="Set Alarm"
+                android:id="@+id/SETALARM"
+                android:onClick="setAlarm"
+                android:layout_margin="30dp"
+                android:textColor="#fff"
+                android:layout_weight="1"
+
+                android:textSize="20dp"
+                android:layout_height="wrap_content"></Button>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="No Alarm set"
+                android:textSize="30sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:weightSum="5"
+                android:layout_margin="2dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="#EAE6E6"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical ="true"
+                    android:layout_alignParentTop="true"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="  Mission Alarm"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:drawableStart="@drawable/ic_clock"
+                    android:id="@+id/missionalarm"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_clock"
+                    ></TextView>
+
+                <View
+                    android:background="#EAE6E6"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical ="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="  Repeat"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:id="@+id/repeat"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_repeat"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_clock"></TextView>
+                <View
+                    android:background="#EAE6E6"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical ="true"
+                    android:layout_alignParentTop="true"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="  Vibrate"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_vibrate"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_clock"></TextView>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/vibrate_chck"
+                    android:paddingEnd="15dp"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+            </LinearLayout>
+                <View
+                    android:background="#EAE6E6"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical ="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/ringtone"
+                    android:text="  Ringtone"
+                    android:textColor="#000"
+                    android:padding="15dp"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_ringtone"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_clock"></TextView>
+                <View
+                    android:background="#EAE6E6"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_centerVertical ="true"
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="  Label"
+                    android:padding="15dp"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_label"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_clock"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
